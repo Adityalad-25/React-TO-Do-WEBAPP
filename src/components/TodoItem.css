@@ -1,0 +1,47 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item span {
+    flex-grow: 1;
+  }
+  
+  .todo-item button {
+    background-color: transparent;
+    border: 2px solid purple;
+    color: #750dec;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    padding: 10px;
+    color:white;
+    background: #000;
+  }
+  
+  .todo-item button:hover {
+    background-color: #6723c6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-todo .btn:hover {
+    background-color: rgb(134, 35, 204);
+    box-shadow: 0 5px 8px rgba(233, 50, 123, 0.6);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .todo-item{
+      width:80%;
+      font-size: 1rem;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+    .add-todo{
+      width:80%;
+    }
+  }
