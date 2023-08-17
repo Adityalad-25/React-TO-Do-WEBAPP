@@ -36,12 +36,54 @@
   
   @media only screen and (max-width: 600px) {
     .todo-item{
-      width:80%;
+      
       font-size: 1rem;
       margin-bottom: 5px;
       margin-top: 0;
+      /* border:3px solid green; */
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
     }
     .add-todo{
-      width:80%;
+    }
+    .todo-list{
+     
+      width:100%;
+      flex-wrap: wrap;
+      
+    }
+     .todo-item {
+      display: flex;
+     
+      flex-shrink: 5;
+      size-adjust:inherit;
+    
+    }
+
+    .todo-item span{
+       
     }
   }
+
+    @media only screen and (max-width: 488px)
+    {  
+      .todo-item{
+      
+      
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .todo-list{
+      
+        width:100%;
+       
+        flex-direction: column;
+        
+      }
+       .added-item{
+        margin-bottom: 5px;;
+       }
+    }
+ 
